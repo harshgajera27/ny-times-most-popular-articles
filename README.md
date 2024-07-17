@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+## NY Times Popular Articles App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This app brings you the hottest news articles on the New York Times website! It leverages the official NY Times Most Popular API to fetch and display the articles that are getting the most views.
 
-## Available Scripts
+### Getting Started
 
-In the project directory, you can run:
+Grab the code: Clone this repository to your local machine.
 
-### `npm start`
+Set up the project: Install all the necessary code pieces by running npm install in your terminal.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Create an API Key: You'll need a key to access the NY Times API. Head over to the developer portal (link provided below) and register for your own. Save the key in a new file named .env located in the project's root directory. In this file, add two lines:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+REACT_APP_API_KEY=your_api_key (replace "your_api_key" with your actual key)
+REACT_APP_API_BASE_URL=https://api.nytimes.com (this sets the base URL for the API calls)
+Launch the app: Now you're ready to see the latest buzz! Run npm start in your terminal to fire up the app.
 
-### `npm test`
+### Testing
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Unit Tests: Want to peek under the hood? Run npm test to execute unit tests and ensure everything's working as expected.
+End-to-End Tests (Optional)
 
-### `npm run build`
+If you'd like to perform more comprehensive tests simulating real user interactions, you can leverage Cypress, a popular testing tool. Here's how:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Start the app as usual using npm start.
+Verify that the app is running at http://localhost:3000 in your browser.
+To open the Cypress test runner in your browser, use npx cypress open. Alternatively, run npm run e2e:chrome for browser-specific testing using Chrome.
+Building for Production
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Ready to share your creation with the world? Run npm run build to generate a production-ready version of the app.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### NY Times Developer Portal:
+https://developer.nytimes.com/get-started
